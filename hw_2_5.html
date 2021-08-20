@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*5. Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation),
+        где arg1, arg2 – значения аргументов, operation – строка с названием операции. В зависимости от
+        переданного значения операции (использовать switch) выполнить одну из арифметических операций
+        (использовать функции из задания 4) и вернуть полученное значение.*/
+        "use strict"
+        let a = Number(prompt("Введите первое целое число")), 
+            b = Number(prompt("Введите второе целое число")),
+            operation = Number(prompt("Введите номер операции: 1-сложение, 2-вычитание, 3-деление, 4-умножение"));
+        switch(operation) {
+            case 1:
+                alert(`Результат сложения = ${a, b}`);
+                break;
+            case 2:
+                alert(`Результат вычитания ${a - b}`);
+                break;
+            case 3:
+                alert(`Результат деления ${(a / b).toFixed(2)}`);
+                break;  
+            case 4:
+                alert(`Результат умножения ${a * b}`);
+                break;  
+        }
+ 
+    </script>
+</body>
+</html>
